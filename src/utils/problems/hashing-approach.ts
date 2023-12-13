@@ -1,12 +1,12 @@
 import assert from "assert";
 import { Problem } from "../types/problem";
 
-const starterCodeHasingApproach = `function hashingApproach(s,k){
+const starterCodeHashingApproach = `function hashingApproach(s,k){
   // Write your code here
 };`;
 
 // checks if the user has the correct code
-const handlerHasingApproach = (fn: any) => {
+const handlerHashingApproach = (fn: any) => {
 	// fn is the callback that user's code is passed into
 	try {
 		const s = [
@@ -17,7 +17,7 @@ const handlerHasingApproach = (fn: any) => {
 		const k = [3, 2];
 		const answers = [
 			1,
-			3
+			2
 		];
 
 		// loop all tests to check if the user's code is correct
@@ -77,8 +77,8 @@ export const hashingApproach: Problem = {
             <code>1 ≤ k ≤ min(|s|, 20)</code>
         </li> 
     `,
-	handlerFunction: handlerHasingApproach,
-	starterCode: starterCodeHasingApproach,
+	handlerFunction: handlerHashingApproach,
+	starterCode: starterCodeHashingApproach,
 	order: 2,
-	starterFunctionName: "function hasingApproach(",
+	starterFunctionName: "function hashingApproach(",
 };
